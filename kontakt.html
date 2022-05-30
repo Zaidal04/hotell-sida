@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Hotell">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+  <title>Dark Hotell</title>
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li><a href="hitta.html">Hitta Oss</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </header>
+
+  <div id="form-container">
+
+    <form action="boka" id="boka">
+
+      <section id="uppgifter">
+
+        <label for="Stad">Stad</label>
+        <select id="Stad" class="" name="Stad">
+          <option value="Malmö">Malmö</option>
+          <option value="Stockholm">Stockholm</option>
+          <option value="Jönköping">Jönköping</option>
+          <option value="Göteborg">Göteborg</option>
+          <option value="Helsingborg">Helsingborg</option>
+        </select>
+
+        <label for="Förnamn">Förnamn</label>
+        <input id="Förnamn" type="text" name="Förnamn" placeholder="Förnamn" value="">
+
+        <label for="Efternamn">Efternamn</label>
+        <input id="Efternamn" type="text" name="Efternamn" placeholder="Efternamn" value="">
+
+        <label for="Email">Email address</label>
+        <input id="Email" type="Email" placeholder="Email Address" name="Email" value="">
+
+        <label for="telefonnummer">Telefonnummer</label>
+        <input id="telefonnummer" type="text" name="Nummer" placeholder="Telefonnummer" value="">
+
+
+
+
+        <button class="boka-knapp">Skicka dina uppgifter</button>
+      </section>
+
+    </form>
+
+  </div>
+  <footer>
+    <p>Dark hotell | Industrigatan 10 | 040 - 66 99 33</p>
+  </footer>
+
+</body>
+
+</html>

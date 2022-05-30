@@ -1,0 +1,334 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+    height: 100%;
+    width: 100%;
+    line-height: 1.3;
+    color: black;
+  }
+
+  header {
+    font-family: "Open Sans", sans-serif;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    background-color: RGB(255, 221, 3);
+  }
+
+  header ul {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    list-style: none;
+  }
+
+  header ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header ul li a:hover {
+    color: grey;
+  }
+
+  #välkommen {
+    flex-direction: column;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    background-color: RGB(251, 252, 212);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  #välkommen h1 {
+    font-size: 55px;
+    padding: 50px;
+    color: black;
+    margin-top: 40px;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: row;
+    background-color: RGB(251, 252, 212);
+    color: black;
+  }
+
+  .information-text {
+    width: 40%;
+    padding: 50px 0px 0px 40px;
+    text-align: justify;
+    line-height: 2;
+    color: black;
+  }
+
+  .information-text h2 {
+    border: 2px solid black;
+    text-align: center;
+  }
+
+  .bilder {
+    margin: 0px 0px 0px 80px;
+  }
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  .mySlides {
+    display: grid;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  #form-container {
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #boka {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 500px;
+    width: 50%;
+    justify-content: center;
+    background-color: RGB(255, 221, 3);
+    border-radius: 8px;
+  }
+
+  input, select {
+    border-radius: 5px;
+  }
+
+  #uppgifter {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 40%;
+  }
+
+  #rum {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  label {
+    margin: 2vh 2vw 0 0vw;
+    display: block;
+  }
+
+  input {
+    padding: 12.5px;
+  }
+
+  select {
+    padding: 10px;
+  }
+
+  .boka-knapp {
+    margin-top: 40px;
+    height: 100px;
+    width: 200px;
+  }
+
+  .date {
+    padding: 15px;
+  }
+
+  #kontakt {
+    display: flex;
+    background-color: RGB(255, 221, 3);
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 500px;
+    width: 90vw;
+  }
+
+  #problem {
+    margin-top: 50px;
+    width: 40%;
+  }
+
+  .skicka-knapp {
+    margin-top: 40px;
+    height: 50px;
+    width: 200px;
+  }
+
+  #textarea {
+    height: 100px;
+    display: block;
+  }
+
+  #hitta-sidan {
+    height: 100vh;
+  }
+
+  #karta-sidan {
+    min-width: 100%;
+  }
+
+  .kartan iframe {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 1.5rem;
+    height: 70px;
+    color: black;
+    background-color: RGB(255, 221, 3);
+    text-align: left;
+  }
+
+  @media(max-width:700px) {
+    header ul li {
+      margin: 0;
+      padding: 1rem;
+    }
+
+    #välkommen h1 {
+      font-size: large;
+      margin-right: 100px;
+      text-align: center;
+    }
+
+    #info {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .left {
+      width: 90%;
+      padding: 100px 0px 0px 0px;
+      margin: 0px 20px 0px 20px;
+    }
+
+    .right {
+      padding-top: 50px;
+      margin: 0px;
+    }
+
+    #boka {
+      flex-direction: column;
+      margin-top: 200px;
+      height: 900px
+    }
+
+    #uppgifter {
+      margin-left: 20px;
+    }
+
+    #rum {
+      margin-left: 20px;
+    }
+
+    input {
+      width: 300px;
+    }
+
+    select {
+      width: 320px;
+    }
+
+    .boka-knapp {
+      margin-top: 40px;
+      height: 50px;
+      width: 200px;
+    }
+
+    .date {
+      padding: 10px;
+    }
+
+    #kontakt {
+      flex-direction: column;
+      margin-top: 150px;
+      padding-bottom: 230px;
+      height: 500px;
+    }
+
+    .skicka-knapp {
+      margin-top: 40px;
+      height: 50px;
+      width: 200px;
+    }
+
+    #textarea {
+      width: 300px;
+    }
+
+    footer {
+      margin-left: auto;
+    }
+  }
