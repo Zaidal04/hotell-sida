@@ -257,7 +257,7 @@
     }
 
     #välkommen h1 {
-      font-size: large;
+      font-size: 2.5rem;
       margin-right: 100px;
       text-align: center;
     }
@@ -265,7 +265,7 @@
     #info {
       display: flex;
       flex-direction: column;
-      background-color: white;
+      background-color: RGB(251, 252, 212);
     }
 
     .left {
@@ -331,4 +331,3 @@
     footer {
       margin-left: auto;
     }
-  }
